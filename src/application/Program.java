@@ -1,27 +1,17 @@
 package application;
 
-import java.util.Scanner;
-
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class Program {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		ChessMatch chessMatch = new ChessMatch();
 		
-		Scanner sc = new Scanner(System.in);
+		UI.printBoard(chessMatch.getPieces());
 		
-		System.out.print("Posicion (row): ");
-		int row = sc.nextInt();
-		System.out.print("Posicion (column): ");
-		int column = sc.nextInt();
-		Position position = new Position(row,column);
-		
-		System.out.println("Posiction: " + position);
-		
-		
-		sc.close();
+	
 	}
 
 }
